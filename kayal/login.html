@@ -1,0 +1,45 @@
+<html>
+	<head>
+		<style>
+			.tab{height:300px;width:400px;margin:auto;display:block;} 
+			.tab td{padding:30px;}
+			.tab input{border:ridge;background-color:transparent;padding:10px;border-radius:8px;}
+			.tab button{border:ridge;background-color:transparent;outline:none;color:white;padding:10px;border-radius:12px;}
+			.tab button:hover{border:ridge;background-color:grey;outline:none;color:white;padding:10px;border-radius:12px;}
+			body{background-color:cyan}
+		</style>
+		<script>
+			function verify(){
+var x="admin";
+
+if(us.value==x && pas.value=="123")
+			{alert("Welcome"+x+" Have a nice Day");window.open("home.html");}
+			else
+			alert("Invalid username or password");}
+		</script>
+	</head>
+	<body>
+<div><h1 style="font-size:60px;text-align:center;">Login Foresy</h1></div>
+<div style="background-color: darkcyan ;left:200px;width:75%;position:absolute;height:500px;">
+<table class="tab">
+<form>
+<tr>
+<td>Username </td>
+<td><input type="text" name="user" id="us" required></td>
+</tr>
+<tr>
+<td>Password </td>
+<td><input type="password" name="pass" id="pas" required></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><button onclick="verify()">submit</button></td>
+</tr>
+<tr>
+<td colspan="2" align="center">Don't have a account</td></tr>
+<tr>
+<td colspan="2" align="center"><button><a href="reg.html">Signup</a></button></td>
+</tr></form>
+</table></div>
+</body>
+</html>
+	

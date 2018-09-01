@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<style>
+			.tab{height:300px;width:400px;margin:auto;display:block;} 
+			.tab td{padding:30px;}
+			.tab input{border:ridge;background-color:transparent;padding:10px;border-radius:8px;}
+			.tab button{border:ridge;background-color:transparent;outline:none;color:white;padding:10px;border-radius:12px;}
+			.tab button:hover{border:ridge;background-color:grey;outline:none;color:white;padding:10px;border-radius:12px;}
+			body{background-color:cyan}
+		</style>
+		<script>
+			function verify(){if(conpas.value!=pas.value)
+			{alert("conform your password correctly");}
+			else{
+			if(pas.vlaue=="123"){
+			alert("Welcome "+us.value);window.open("home.html");}else
+			alert("invalid password")}
+		</script>
+	</head>
+	<body>
+<div><h1 style="font-size:60px;text-align:center;">Register with Foresy</h1></div>
+<div style="background-color: darkcyan ;left:200px;width:75%;position:absolute;height:700px;">
+<table class="tab">
+<form>
+<tr>
+<td>Username </td>
+<td><input type="text" name="user" id="us" required></td>
+</tr>
+<tr>
+<td>Password </td>
+<td><input type="password" name="pass" id="pas" required></td>
+</tr>
+<tr>
+<td>Conform Password </td>
+<td><input type="password" name="pass" id="conpas" required></td>
+</tr>
+<tr>
+<td colspan="2" align="center"><button onclick="verify()">submit</button></td>
+</tr>
+<tr>
+<td colspan="2" align="center">Already have a account</td>
+</tr>
+<tr>
+<td colspan="2" align="center"><button><a href="login.html">LogIn</a></button></td>
+</tr></form>
+</table></div>
+</body>
+</html>
+	
